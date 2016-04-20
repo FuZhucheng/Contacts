@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_camera"
+            android:title="导入联系人" />
+        <!--  android:icon="@drawable/ic_menu_camera"-->
+
+        <item android:id="@+id/nav_gallery"
+            android:title="Gallery" />
+        <!--  android:icon="@drawable/ic_menu_gallery"-->
+
+        <item android:id="@+id/nav_slideshow"
+            android:title="主题" ></item>
+        <!-- android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item android:id="@+id/nav_manage"
+            android:title="Tools"></item>
+        <!-- android:icon="@drawable/ic_menu_manage"-图片自己想要自己加-->
+
+    </group>
+</menu>
