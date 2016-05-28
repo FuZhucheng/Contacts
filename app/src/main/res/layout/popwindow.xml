@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pop"
+        android:background="@color/gray"
+        android:layout_above="@+id/pop"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2.25dp"
+        android:background="#fa7829"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/pop_computer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增联系人"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/line1"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/pop_computer"/>
+
+    <TextView
+        android:id="@+id/pop_financial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除联系人"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/line2"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/pop_financial"/>
+
+    <TextView
+        android:id="@+id/pop_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享联系人"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/line3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
