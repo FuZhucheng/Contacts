@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_camera"
+        <item android:id="@+id/import_contacts"
             android:title="导入联系人" />
         <!--  android:icon="@drawable/ic_menu_camera"-->
 
@@ -10,11 +10,11 @@
             android:title="Gallery" />
         <!--  android:icon="@drawable/ic_menu_gallery"-->
 
-        <item android:id="@+id/nav_slideshow"
+        <item android:id="@+id/theme"
             android:title="主题" ></item>
         <!-- android:icon="@drawable/ic_menu_slideshow"-->
 
-        <item android:id="@+id/nav_manage"
+        <item android:id="@+id/setting"
             android:title="Tools"></item>
         <!-- android:icon="@drawable/ic_menu_manage"-图片自己想要自己加-->
 

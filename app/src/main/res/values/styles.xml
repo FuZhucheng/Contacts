@@ -5,6 +5,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">#673AB7</item>
+    </style>
+
     <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
     </style>
 
@@ -14,6 +18,27 @@
         <item name="colorAccent">#FF4081</item>
         <item name="android:windowBackground">@color/window_background</item>
     </style>
+
+    <style name="SwitchTheme1" parent="@android:style/Theme.Black">
+        <item name="colorValue">#FF00FF00</item>
+        <item name="floatValue">0.35</item>
+        <item name="integerValue">33</item>
+        <item name="booleanValue">true</item>
+        <item name="dimensionValue">76dp</item>
+        <!-- 如果string类型不是填的引用而是直接放一个字符串,在布局文件中使用正常,但代码里获取的就有问题 -->
+
+        <item name="referenceValue">@drawable/blue</item>
+    </style>
+    <style name="SwitchTheme2" parent="@android:style/Theme.Wallpaper">
+        <item name="colorValue">#FFFFFF00</item>
+        <item name="floatValue">1.44</item>
+        <item name="integerValue">55</item>
+        <item name="booleanValue">false</item>
+        <item name="dimensionValue">76px</item>
+        <item name="stringValue">@string/action_settings</item>
+        <item name="referenceValue">@drawable/gray</item>
+    </style>
+
     <color name="window_background">#FFF5F5F5</color>
 
 </resources>

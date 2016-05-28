@@ -2,25 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginBottom="30dp">
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <com.android.administrator.contacts_fuzhucheng.ui.view.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入关键字"
+        android:background="@drawable/bg_search_input"
+        android:drawableLeft="@drawable/ic_search"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
     <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none"/>
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="#01000000"/>
 
-    <TextView
-        android:id="@+id/school_friend_dialog"
-        android:layout_width="80.0dip"
-        android:layout_height="80.0dip"
-        android:layout_gravity="center"
-        android:background="@drawable/image_background"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        android:textSize="45sp"
-        android:visibility="gone"/>
+
+
+
+        <com.android.administrator.contacts_fuzhucheng.ui.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
 
 
 </LinearLayout>
